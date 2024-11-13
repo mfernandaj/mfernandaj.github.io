@@ -1,0 +1,279 @@
+/* Importar fuentes desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+/* Esto ayuda a evitar problemas de margen inesperado */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans';
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Color de fondo suave */
+    color: #333; /* Color de texto */
+}
+
+header {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 10px 0;
+}
+/* Color para los encabezados principales */
+header, h1, h2, h3 {
+    color: #333333; /* Color de encabezado más oscuro */
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #696969;
+    margin: 0 30px;
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+
+nav a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.header-img {
+    background-attachment: fixed;  /*Activa el efecto parallax */
+    background-image: url(/assets/img/header-img.jpg);
+    background-size: cover;          /* Hace que la imagen cubra todo el contenedor */
+    background-position: center;     /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat;    /* Evita que la imagen se repita */
+    width: 100%;                     /* Ocupa todo el ancho disponible */
+    height: 500px;                   /* Define la altura específica del contenedor */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.header-img p{
+    font-size: 20px;
+}
+.header-img h1{
+    font-size:50px;
+    padding: 20px 0;
+}
+
+/* Configuración sobre mi */
+.sobremi-contenido {
+    font-family: 'Merriweather', serif; 
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Agrega algo de espacio dentro del contenedor */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+.sobremi-contenido h1 {
+    color: #ff6600;
+    font-family: 'Rubik', sans-serif; /* Aplica Rubik al encabezado */
+    font-size: 2em; /* Aumenta el tamaño del encabezado */
+}
+
+.sobremi-contenido p {
+    line-height: 1.6; /* Mejora la legibilidad del texto */
+    font-family: 'Open Sans', sans-serif; /* Aplica Open Sans a los párrafos */
+    text-align: justify; /* Alinea el texto a ambos lados */
+}
+
+.sobremi-contenido img {
+    display: block;
+    margin: 20px auto; /* Centra la imagen dentro del contenedor */
+    max-width: 200px; /* Evita que la imagen sobrepase el ancho del contenedor */
+    height: auto;
+    border-radius: 10px; /* Añade bordes redondeados a la imagen */
+}
+/*************/
+/* Estilos para la sección de "Publicaciones recientes" */
+main {
+    max-width: 1000px; /* Limita el ancho de la sección de publicaciones */
+    margin: 40px auto; /* Centra la sección y agrega espacio superior */
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Título de la sección de publicaciones */
+main h2 {
+    margin-top:40px;
+    text-align: center; /* Centra el título */
+    font-size: 2em;
+    color: #ff6600; /* Un color llamativo para el título */
+    margin-bottom: 30px; /* Agrega espacio debajo del título */
+}
+
+
+/* Estilo de la lista de publicaciones */
+ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0;
+}
+
+/* Cada ítem de la lista de publicaciones */
+ul li {
+    padding: 15px;
+    margin-bottom: 20px; /* Espacio entre cada publicación */
+    border: 1px solid #ddd; /* Borde sutil alrededor de cada publicación */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Fondo claro */
+    transition: all 0.3s ease; /* Transición para un efecto suave al pasar el ratón */
+    
+}
+
+/* Efecto al pasar el ratón sobre cada publicación */
+ul li:hover {
+    background-color: #f0f0f0; /* Fondo ligeramente más oscuro */
+    transform: translateY(-5px); /* Mueve ligeramente hacia arriba */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega sombra al pasar el ratón */
+}
+
+/* Estilo de los enlaces de las publicaciones */
+ul li a {
+    font-size: 1.2em;
+    color: #333; /* Color de texto predeterminado */
+    text-decoration: none; /* Elimina el subrayado */
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: #ff6600; /* Color llamativo al pasar el ratón */
+    text-decoration: underline; /* Subraya el enlace al pasar el ratón */
+}
+
+/* Fecha de la publicación */
+ul li span {
+    display: block;
+    font-size: 0.9em;
+    color: #777; /* Color gris para la fecha */
+    margin-top: 10px;
+}
+
+/*************/
+
+/* Estilo para las imágenes dentro de las publicaciones */
+main img {
+    max-width: 100%; /* Asegura que las imágenes no sobrepasen el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados para un toque estético */
+    margin-bottom: 20px; /* Espacio debajo de las imágenes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para hacer que las imágenes resalten */
+}
+
+/* Estilo para las imágenes en la publicación, ajustando un tamaño más específico */
+.post img {
+    max-width: 80%; /* Limita el ancho a un 80% del contenedor */
+    height: auto; 
+    display: block; /* Hace que la imagen sea un bloque (centrada por defecto) */
+    margin-left: auto; /* Centra la imagen */
+    margin-right: auto; /* Centra la imagen */
+    border-radius: 10px; /* Bordes redondeados para un toque estético */
+    margin-bottom: 10px; /* Espacio debajo de las imágenes */
+    margin-top: 10px; /* Espacio debajo de las imágenes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Centra las descripciones de las imágenes */
+.post img + em {
+    display: block; /* Convierte la descripción en un bloque */
+    text-align: center; /* Centra el texto */
+    font-style: italic; /* Mantiene el estilo itálico */
+      margin-top: 10px; /* Da un pequeño espacio entre la imagen y la descripción */
+    color: #666; /* Opcional: puedes cambiar el color de la descripción */
+    font-size: 0.9em; /* Ajusta el tamaño de la fuente de la descripción */
+}
+/* Añadir margen superior e inferior a la sección del final del post */
+.post p:last-of-type {
+
+    margin-top: 10px; /* Ajusta el espacio superior */
+    margin-bottom: 10px; /* Ajusta el espacio inferior */
+}
+
+/* Añadir margen adicional a la línea horizontal  */
+.post hr {
+    margin-top: 30px; /* Ajusta el espacio encima de la línea */
+    margin-bottom: 30px; /* Ajusta el espacio debajo de la línea */
+}
+
+/* Efecto de zoom en hover para las imágenes */
+.post img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Centrando títulos h1 en publicaciones */
+.post h1 {
+    text-align: center; /* Centra el título */
+    font-size: 1.5em; /* Ajusta el tamaño según tu preferencia */
+    margin-top: 20px; /* Agrega espacio superior */
+    margin-bottom: 20px; /* Agrega espacio inferior */
+    color: #333; /* Color del título */
+}
+/*esto es tags no se si funciona
+.category-tag {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #ff6600; 
+    color: #fff;
+    border-radius: 5px;
+    font-size: 0.9em;
+}*/
+/*configuración footer*/
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+    color: #333;
+}
+footer i {
+    margin-right: 8px; /* Espacio entre el icono y el texto */
+    color: #ff6600; /* Color azul para los iconos */
+    font-size: 18px; /* Tamaño de los iconos */
+}
+
+.footer-links a {
+    color: #333;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.contact-info {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.footer-links a:hover,
+.contact-info a:hover {
+    color: #007bff; /* Color del texto cuando se pasa el ratón */
+}

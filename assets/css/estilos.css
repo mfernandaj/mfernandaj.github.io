@@ -183,6 +183,17 @@ main img {
     margin-top: 10px; /* Espacio debajo de las imágenes */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
+.post p {
+    text-align: justify; /* Alinea el texto de los párrafos en las publicaciones */
+}
+/* Centrar la fecha en la lista de publicaciones recientes */
+.fecha-centrada {
+    display: block;
+    text-align: center;
+    font-size: 0.9em;
+    color: #777; /* Color gris suave */
+    margin-top: 5px; /* Espacio entre el título y la fecha */
+}
 
 /* Centra las descripciones de las imágenes */
 .post img + em {

@@ -36,7 +36,7 @@ Monastiraki es un lugar donde la historia y la modernidad se encuentran. Con su 
 
 Psiri es el barrio bohemio de Atenas, famoso por su vibrante vida nocturna y su escena artística. Aquí puedes encontrar una mezcla de galerías de arte, bares de moda, y restaurantes que sirven desde platos tradicionales griegos hasta cocina moderna. Es el lugar ideal para disfrutar de un buen plato de "souvlaki" o probar alguna de las especialidades locales.
 
-![Barrio de Psiri](/assets/img/atenas-psiri.jpg)
+![Barrio de Psiri](/assets/img/atenas-Psiri.jpg)
 *Psiri, el barrio bohemio y cultural de Atenas.*
 
 ## 5. Consejos para tu visita

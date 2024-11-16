@@ -39,7 +39,10 @@ La gastronomía en Naxos es simplemente deliciosa. Desde el queso local "arsenik
 
 ## 5. Consejos para tu visita
 
-Si planeas visitar Naxos, te recomiendo alquilar un coche para explorar la isla a tu propio ritmo. Además, no olvides probar los famosos postres griegos como los "loukoumades", ¡una delicia!
+- **Explora a pie**: Si planeas visitar Naxos, te recomiendo alquilar un coche para explorar la isla a tu propio ritmo. Además, no olvides probar los famosos postres griegos como los "loukoumades", ¡una delicia!
+
+- **Palabras útiles en griego**:
+ Si viajas a Grecia, estas palabras básicas te ayudarán a comunicarte y a disfrutar más de la experiencia. ¡Practica y sorprende a los locales!:  Sí= Ne. No= Óji. Gracias= Efjaristó. Por favor y De nada= Parakaló. Hola= Yiássas. Adiós= Andio. Buenos días= Kaliméra. Buenas noches= Kaliníjta.
 
 ---
 

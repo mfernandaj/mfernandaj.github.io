@@ -183,17 +183,6 @@ main img {
     margin-top: 10px; /* Espacio debajo de las imágenes */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
-.post p {
-    text-align: justify; /* Alinea el texto de los párrafos en las publicaciones */
-}
-/* Centrar la fecha en la lista de publicaciones recientes */
-.fecha-centrada {
-    display: block;
-    text-align: center;
-    font-size: 0.9em;
-    color: #777; /* Color gris suave */
-    margin-top: 5px; /* Espacio entre el título y la fecha */
-}
 
 /* Centra las descripciones de las imágenes */
 .post img + em {
@@ -231,16 +220,6 @@ main img {
     margin-bottom: 20px; /* Agrega espacio inferior */
     color: #333; /* Color del título */
 }
-/*esto es tags no se si funciona
-.category-tag {
-    display: inline-block;
-    padding: 5px 10px;
-    background-color: #ff6600; 
-    color: #fff;
-    border-radius: 5px;
-    font-size: 0.9em;
-}*/
-/*configuración footer*/
 
 footer {
     text-align: center;
@@ -288,3 +267,133 @@ footer i {
 .contact-info a:hover {
     color: #007bff; /* Color del texto cuando se pasa el ratón */
 }
+/*configuración destinos destacados en la home*/
+
+#destinos-destacados-home {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#destinos-destacados-home h2 {
+    font-size: 2em;
+    color: #FF7A00;
+    margin-bottom: 20px;
+}
+
+.destinos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.destino-item {
+    width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    background-color: #fff;
+}
+
+.destino-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.destino-item h3 {
+    font-size: 1.5em;
+    margin: 10px;
+    color: #333;
+}
+
+.destino-item p {
+    font-size: 1em;
+    color: #666;
+    margin: 10px;
+}
+
+.boton-leer-mas {
+    display: block;
+    text-align: center;
+    background-color: #FF7A00;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.boton-leer-mas:hover {
+    background-color: #cc5f00;
+}
+
+/*configuración destinos destacados*/
+
+#destinos-destacados {
+    margin: 40px 0;
+    text-align: center;
+}
+
+#destinos-destacados h2 {
+    font-size: 2em;
+    color: #FF7A00; /* Ajusta el color según la paleta de tu blog */
+    margin-bottom: 20px;
+}
+
+.destinos-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.destino-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.destino-item:hover {
+    transform: scale(1.05);
+}
+
+.destino-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.destino-item h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 15px 0;
+}
+
+.destino-item p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.boton-leer-mas {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #FF7A00;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.boton-leer-mas:hover {
+    background-color: #e96b00;
+}
+

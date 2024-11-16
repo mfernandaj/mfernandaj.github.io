@@ -50,7 +50,10 @@ Florencia es el lugar perfecto para probar la **pizza de verduras**,  También e
 
 - **Sube al Campanario de Giotto**: Si quieres una vista espectacular de la ciudad, no te pierdas la oportunidad de subir al campanario de Giotto, justo al lado de la catedral.
 - **Explora los mercados locales**: El Mercado de San Lorenzo es ideal para comprar productos locales como aceite de oliva, queso y especias.
-- **No te pierdas la comida florentina**: Florencia es famosa por sus platos tradicionales, como la "pizza de verduras"
+- **No te pierdas la comida florentina**: Florencia es famosa por sus platos tradicionales, como la " bistecca alla Fiorentina"
+- **Palabras útiles en italiano**:
+ Si visitas Italia, estas palabras básicas en italiano te serán de gran ayuda para comunicarte y disfrutar al máximo de la hospitalidad local. Sí: Sì
+No: No. Gracias: Grazie. Por favor: Per favore. De nada: Prego. Hola: Ciao (informal) / Salve (formal). Adiós: Arrivederci. Buenos días: Buongiorno.Buenas noches: Buonanotte.
 
 ---
 

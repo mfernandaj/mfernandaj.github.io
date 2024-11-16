@@ -45,7 +45,8 @@ No puedes irte de Aveiro sin probar los famosos pasteles de ovos, una delicia tr
 - **Camina por la zona histórica**: No te pierdas un paseo por las calles del centro histórico de Aveiro, donde podrás admirar la arquitectura de la ciudad y sus edificios de colores.
 - **Visita la Universidad de Aveiro**: Fundada en 1973, la Universidad de Aveiro es conocida por su arquitectura moderna y sus innovadoras instalaciones.
 - **Relájate en la playa**: Aveiro está cerca de la costa, así que no dudes en visitar las hermosas playas de la región, como la playa de Costa Nova, famosa por sus casitas de colores.
-
+- **Palabras útiles en portugués**:
+ Si visitas Portugal, estas palabras básicas en portugués te serán de gran ayuda para comunicarte y disfrutar al máximo de la hospitalidad local. ¡Practícalas y sorprende a los portugueses!. Sí: Sim. No: Não. Gracias: Obrigado/a (depende de tu género: "Obrigado" si eres hombre, "Obrigada" si eres mujer). Por favor: Por favor. De nada: De nada. Hola: Olá.Adiós: Adeus.Buenos días: Bom dia.Buenas noches: Boa noite.
 ---
 
 **Aveiro** es una ciudad que te invita a desconectar y disfrutar de la belleza simple de la vida. Con sus canales tranquilos, su arquitectura única y su gastronomía deliciosa, Aveiro se presenta como un destino encantador para todo tipo de viajeros.

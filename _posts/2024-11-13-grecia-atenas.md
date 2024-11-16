@@ -45,8 +45,12 @@ Psiri es el barrio bohemio de Atenas, famoso por su vibrante vida nocturna y su 
 - **Visita los museos**: Atenas alberga algunos de los museos más importantes del mundo, como el Museo Arqueológico Nacional y el Museo de la Acrópolis.
 - **Sube al Monte Licabeto**: Desde la cima de esta montaña, se obtiene una vista panorámica increíble de toda la ciudad, perfecta para ver el atardecer.
 
----
+- **Donde comer en Atenas**: Los precios de los restaurantes en Atenas son similares a los que se pueden encontrar en España, están entre 8 € y 12 €. Las zonas más recomendables para degustar los platos típicos griegos son Plaka y Monastiraki. Aquí te dejo algunos platos típicos que comer en Atenas: Moussaka es como una lasaña hecha de carne picada de cordero, berenjenas y tomate, Gyros: Se trata de pan de pita relleno de carne asada (de pollo o cordero), tomate, cebolla y salsa. Psarosoupa: Sopa de pescado. Ouzo: Licor de sabor dulce y olor a regaliz. Suele tener entre 37 y 50 grados.
 
+- **Palabras útiles en griego**:
+ Si viajas a Grecia, estas palabras básicas te ayudarán a comunicarte y a disfrutar más de la experiencia. ¡Practica y sorprende a los locales!:  Sí= Ne. No= Óji. Gracias= Efjaristó. Por favor y De nada= Parakaló. Hola= Yiássas. Adiós= Andio. Buenos días= Kaliméra. Buenas noches= Kaliníjta.
+
+---
 **Atenas** es mucho más que una ciudad antigua, es un lugar donde la historia se mezcla con la modernidad, creando una atmósfera única. No importa si eres un amante de la historia, la cultura o simplemente buscas un lugar para disfrutar de la vida, Atenas tiene algo para todos.
 
 ---

@@ -1,0 +1,10 @@
+{
+  "routes": [
+    "/conclusiones",
+    "/explicacion",
+    "/instalacion",
+    "/justificacion",
+    "/primeros-pasos",
+    "/utilizacion"
+  ]
+}

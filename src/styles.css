@@ -1,0 +1,405 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.container-fluid {
+    display: flex;
+    flex: 1;
+}
+
+.row {
+    display: flex;
+    flex: 1;
+}
+/*Estilo a la fecha */
+
+.info-section {
+  display: flex; /* Usa flexbox para alinear elementos */
+  justify-content: space-between; /* Espacia los elementos entre sí */
+  align-items: center; /* Alinea verticalmente al centro */
+}
+
+.info-section p {
+  margin: 0; /* Asegura que no haya márgenes que desalineen */
+  font-size: 16px; /* Ajusta el tamaño de fuente para que sea legible */
+}
+
+.info-section a {
+  text-decoration: none; /* Sin subrayado */
+  color: #007bff; /* Color del enlace */
+  font-weight: bold; /* Resalta el enlace */
+}
+
+.info-section a:hover {
+  text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+/* perfil*/
+
+/* Contenedor general (para la estructura) */
+.profile {
+  display: flex; /* Usamos flexbox para alinear los elementos */
+  align-items: center; /* Centra verticalmente la foto y el texto */
+}
+
+/* Foto de perfil */
+.profile-photo {
+  width: 80px; /* Tamaño reducido */
+  height: 80px; /* Cuadrado */
+  border-radius: 50%; /* Redondeado */
+  margin-right: 10px; /* Espaciado entre la foto y el nombre */
+  object-fit: cover; /* Asegura que la foto se vea bien */
+}
+
+/* Nombre */
+.profile-name {
+  font-size: 1rem; /* Tamaño del texto */
+  font-weight: bold; /* Negrita */
+  color: #343a40; /* Color oscuro */
+  margin: 0; /* Elimina márgenes */
+  text-align: right; /* Alinea el texto a la derecha */
+}
+
+
+/*estilo logo inicial*/
+
+.image-container {
+  text-align: center; /* Centra la imagen */
+  margin-bottom: 20px; /* Añade un espaciado inferior */
+}
+
+.logo-inicial {
+  width: 120%; /* Aumenta el tamaño de la imagen en un 20% del contenedor */
+  max-width: 700px; /* Ajusta el tamaño máximo para pantallas más grandes */
+  height: auto; /* Mantén las proporciones */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Aumenta la sombra para destacarla */
+  margin: 0 auto; /* Centra la imagen dentro de su contenedor */
+  display: block; /* Asegura que la imagen se comporte como un bloque */
+}
+
+/*menu intro container*/
+.intro-container {
+  background: linear-gradient(to right, #8b4d77, #8b4d77);
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.intro-container h1 {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.intro-container a {
+  font-weight: bold;
+  border-radius: 50px;
+  padding: 10px 30px;
+}
+/* Estilos para el logo en el menú lateral */
+.logo-container img {
+  width: 70%; /* Ajusta el tamaño de la imagen al 100% del contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    max-width: 250px; /* Establece un tamaño máximo para evitar que la imagen sea demasiado grande */
+    margin: 0 auto; /* Centra la imagen */
+    display: block; /* Asegura que la imagen se comporte como un bloque y se centre */
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60px; /* Tamaño adecuado del logo */
+  height: auto;
+}
+
+/* Asegúrate de que el logo se vea bien centrado y con espacio adecuado */
+.logo-container {
+  margin-bottom: 20px;
+}
+
+/* Sidebar Styles modificado*/
+.col-md-3, .col-lg-2 {
+    background-color: #f8f9fa;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    position: fixed;
+    width: 270px; /* Establece un ancho fijo para el menú */
+    z-index: 100; /* Asegura que el menú esté sobre el contenido principal */
+}
+/* Main Content Styles */
+.main-content {
+    margin-left: 500px; /* Espacio igual al ancho del menú */
+    padding: 20px;
+    overflow: auto; /* Permite scroll si el contenido es largo */
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: flex-start; /* Alinea el contenido al inicio verticalmente */
+}
+
+h2.h4 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #343a40;
+    text-align: center;
+}
+
+.nav-link {
+    display: block;
+    text-decoration: none;
+    color: #007bff;
+    margin: 10px 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+.nav-link:hover {
+    background-color: #e2e6ea;
+    transform: scale(1.05); /* Agranda ligeramente el enlace */
+}
+
+.nav-link.active {
+    background-color: #d6d8db;
+}
+
+/* Main Content Styles modificado*/
+.col-md-9, .col-lg-10 {
+    padding: 20px;
+    margin-left: 270px; /* Espacio para el ancho del menú */
+    overflow: auto; /* Permite scroll si el contenido excede */
+    z-index: 10; /* Asegura que el contenido esté por debajo del menú */
+    position: relative; /* Para que no se superponga sobre el menú */
+    
+    
+}
+
+/*header*/
+
+header h1 {
+    text-align: center;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    color: #495057;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+/* General footer styles */
+footer {
+  padding: 20px 15px;
+  background: linear-gradient(to right, #4e3b4f, #372c3a); /* Fondo más oscuro */
+  color: #e0e0e0; /* Gris claro */
+  font-size: 14px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  border-top: 1px solid #555; /* Línea decorativa */
+}
+
+.footer-container {
+  max-width: 800px; /* Limita el ancho del contenido del footer */
+  width: 100%; /* Asegura que el contenido sea responsivo */
+  margin: 0 auto; /* Centra horizontalmente dentro del contenedor principal */
+  display: flex;
+  justify-content: space-between; /* Espaciado uniforme entre secciones */
+  align-items: center;
+  flex-wrap: wrap; /* Ajusta las filas en pantallas más pequeñas */
+  gap: 15px; /* Espaciado entre secciones */
+}
+
+.footer-section {
+  text-align: center;
+  flex: 1;
+  min-width: 150px; /* Asegura que las secciones tengan un tamaño mínimo */
+}
+
+.footer-section.general-info {
+  flex: 2; /* Hace que esta sección ocupe más espacio */
+}
+
+.footer-section p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+footer a {
+  color: #cfcfcf; /* Gris claro */
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffffff; /* Blanco al pasar el ratón */
+}
+
+/* Icon styles */
+.footer-links a i {
+  margin-right: 5px;
+}
+
+footer i {
+  color: #e0e0e0; /* Íconos en gris claro */
+  margin-right: 5px;
+}
+/*footer menu*/
+
+
+.footer-menu {
+  text-align: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.footer-menu a {
+  color: #333;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.footer-menu a:hover {
+  text-decoration: underline;
+  color: #007bff;
+}
+
+.footer-menu i {
+  margin-right: 8px;
+  color: #8b4d77;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+
+/* styles para fecha publicación*/
+
+section p {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+  
+  section a {
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  section a:hover {
+    text-decoration: underline;
+  }
+/*introduccion*/
+  section p.lead {
+    font-size: 1.2rem;
+    color: #495057;
+    margin-bottom: 20px;
+  }
+
+  .tutorial-container {
+    max-width: 800px; /* Limita el ancho del contenido */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  main {
+    background-color: #f9f9f9; /* Fondo suave para la sección principal */
+    padding: 40px 0; /* Espaciado vertical */
+  }
+  
+  aside {
+    background-color: #f5f5f5; /* Fondo claro para el menú lateral */
+    border-right: 1px solid #ddd; /* Línea de separación */
+  }
+  /*estilo logo angular*/
+  .angular-logo {
+    width: 800px; /* Ajusta el tamaño de la imagen (ancho) */
+    height: auto; /* Mantén la proporción de la imagen */
+    margin-top: 10px; /* Espacio entre el título y la imagen */
+  }
+  /*instalación*/
+  .installation-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  img.img-fluid {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+  
+  .code-block {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: "Courier New", Courier, monospace;
+    color: #333;
+    overflow-x: auto;
+  }
+  
+  .table {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+  }
+  .table th {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+  }
+  /*primeros pasos*/
+  .code-block {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: "Courier New", Courier, monospace;
+    color: #333;
+    overflow-x: auto;
+  }
+
+  .subcontenedor {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-left: 5px solid #007bff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  /*mejoras*/
+
+  .profile-photo, .logo-inicial, .angular-logo {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-photo:hover, .logo-inicial:hover {
+    transform: scale(1.1); /* Agranda un poco la imagen */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra dinámica */
+}
+ 
+
+ 

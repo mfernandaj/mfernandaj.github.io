@@ -1,0 +1,132 @@
+<!-- Sección: Funcionamiento del framework -->
+<div class="funcionamiento-framework-container mb-5">
+
+    <!-- Subsección: Actúa sobre páginas, ficheros, secciones -->
+    <div class="subcontenedor mb-4">
+        <h3 class="text-primary">¿Actúa sobre páginas, ficheros, secciones…?</h3>
+        <p>
+            Angular organiza y gestiona las aplicaciones mediante **componentes**, que representan partes de la interfaz de usuario.
+            Cada componente es una combinación de:
+        </p>
+        <ul class="list-group">
+            <li class="list-group-item">
+              <pre class="code-block"><code>HTML: Define la estructura visual (elementos, contenedores, botones, etc).</code></pre>
+            </li>
+            <li class="list-group-item">
+              <pre class="code-block"><code>CSS o SCSS: Añade estilos específicos que afectan solo a ese componente.</code></pre>
+            </li>
+            <li class="list-group-item">
+              <pre class="code-block"><code>TypeScript: Contiene la lógica del componente (eventos, propiedades, funciones).</code></pre>
+            </li>
+        </ul>
+        <p>
+            Estos componentes se combinan dentro de un árbol jerárquico para construir toda la aplicación, desde pequeñas secciones hasta páginas completas.
+        </p>
+    </div>
+  
+    <!-- Subsección: Editar/Modificar ficheros -->
+    <div class="subcontenedor mb-4">
+        <h3 class="text-primary">¿Cómo se editan/modifican los ficheros que actúan en el framework?</h3>
+        <p>
+            Los ficheros que conforman Angular pueden editarse fácilmente con un editor como **Visual Studio Code**. Su organización es modular, facilitando las modificaciones:
+        </p>
+        <ul>
+            <li>
+              <pre class="code-block"><code>**HTML**: Se encuentra en la carpeta <code>src/app/</code> con el sufijo <code>.component.html</code>.</code></pre>
+            </li>
+            <li>
+              <pre class="code-block"><code>**Lógica (TypeScript)**: Localizada en los archivos <code>.component.ts</code>, donde se define la funcionalidad del componente.</code></pre>
+            </li>
+            <li>
+              <pre class="code-block"><code>**Estilos (CSS o SCSS)**: Se editan en los archivos <code>.component.css</code> o <code>.component.scss</code>.</code></pre>
+              <!-- Imagen del navegador con la app -->
+              <img src="/assets/img/ficheros.jpg" alt="Aplicación Angular en localhost" class="img-fluid rounded">
+            </li>
+        </ul>
+        
+    </div>
+  
+    <!-- Subsección: Referenciar ficheros -->
+  <div class="subcontenedor">
+    <h3 class="text-primary">¿Cómo se referencian los ficheros creados desde otras aplicaciones (si es el caso)?</h3>
+    <p>
+      Angular permite reutilizar ficheros y componentes mediante diferentes enfoques, dependiendo de la arquitectura del proyecto. A continuación, se detallan las opciones principales:
+    </p>
+  
+    <!-- Módulos compartidos -->
+    <h4 class="text-secondary">Módulos compartidos</h4>
+    <p>
+      Para proyectos no standalone, Angular utiliza módulos (`app.module.ts`) para agrupar componentes, servicios y directivas que pueden exportarse e importarse en otros módulos o aplicaciones. 
+    </p>
+    <pre class="code-block">
+  <code>
+    &lt;!-- Importar módulos en Angular --&gt;
+    import &#123; NgModule &#125; from '&#64;angular/core';
+    import &#123; CommonModule &#125; from '&#64;angular/common';
+    import &#123; MiComponente &#125; from './mi-componente/mi-componente.component';
+  
+    &#64;NgModule(&#123;
+      declarations: [MiComponente],
+      exports: [MiComponente],
+      imports: [CommonModule]
+    &#125;)
+    export class SharedModule &#123;
+  </code>
+    </pre>
+    <p>
+      Luego, este módulo puede importarse en cualquier otro módulo de la aplicación:
+    </p>
+    <pre class="code-block">
+  <code>
+  import &#123; SharedModule &#125; from './shared/shared.module';
+  
+  &#64;NgModule(&#123;
+    imports: [SharedModule],
+    &#125;)
+  export class FeatureModule &#123; &#125;
+  </code>
+    </pre>
+  
+    <!-- Proyectos standalone -->
+    <h4 class="text-secondary">Proyectos standalone</h4>
+    <p>
+      En proyectos standalone Angular utiliza (`app.routes.ts`), los componentes y servicios se registran directamente en las rutas o en el componente principal. En este caso, puedes importar un componente desde otro proyecto de esta manera:
+    </p>
+    <pre class="code-block">
+  <code>
+  import &#123; MiComponente &#125; from './mi-componente/mi-componente.component';
+  
+  const routes: Routes = [
+  &#123;
+      path: 'mi-componente',
+      component: MiComponente, // Referencia directa al componente
+      &#125;
+  ];
+  </code>
+    </pre>
+  
+    <p>
+      Esto simplifica la gestión de dependencias y reduce la cantidad de archivos adicionales. Es importante tener en cuenta que las aplicaciones standalone están disponibles a partir de Angular 14.
+    </p>
+  
+    <!-- Bibliotecas -->
+    <h4 class="text-secondary">Bibliotecas</h4>
+    <p>
+      Angular CLI permite crear bibliotecas reutilizables que pueden compartirse entre proyectos e incluso publicarse en npm. Las bibliotecas son ideales para agrupar funcionalidad común, como componentes UI, servicios o utilidades.
+    </p>
+    <p>
+      Puedes generar una biblioteca con el siguiente comando:
+    </p>
+    <pre class="code-block"><code>ng generate library mi-biblioteca</code></pre>
+    <p>
+      Una vez creada, la biblioteca puede importarse en otros proyectos Angular mediante npm. Ejemplo de importación en un módulo:
+    </p>
+    <pre class="code-block">
+  <code>
+  import &#123; MiBibliotecaModule &#125; from 'mi-biblioteca';
+  &#64;NgModule(&#123;
+    imports: [MiBibliotecaModule],
+    &#125;)
+  export class AppModule &#123; &#125;
+  </code></pre>
+  </div>

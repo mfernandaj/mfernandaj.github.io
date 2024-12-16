@@ -1,0 +1,138 @@
+<div class="subcontenedor">
+    <div class="installation-container">
+        <!-- Encabezado -->
+        <header class="mb-4 text-center">
+          
+          <p>
+            Aprende cómo instalar y configurar Angular paso a paso. En esta sección te guiaré en el proceso de instalación de Angular para Windows. Siguiendo los siguientes pasos:
+          </p>
+          
+        </header>
+      
+        <!-- Sección Requisitos -->
+        <section class="mb-5">
+          <h3 class="h5 text-secondary">Paso 1. Requisitos previos: Instalar Node.js y npm</h3>
+          
+          <p>Asegúrate de contar con lo siguiente antes de instalar Angular:</p>
+          <p>Node.js proporciona un entorno para ejecutar JavaScript fuera del navegador, mientras que npm (Node Package Manager) permite gestionar las dependencias del proyecto, como Angular CLI.</p>
+          <p>Es fundamental asegurarte de que tienes instaladas versiones compatibles:</p>
+            <ul>
+              <li><strong>Node.js:</strong> versión 14.20.0 o superior.</li>
+              <li><strong>npm:</strong> versión 6.14.0 o superior.</li>
+            </ul>
+          
+            <li>Node.js y npm. Descárgalos desde la <a href="https://nodejs.org" target="_blank" class="text-primary">página oficial de Node.js</a>.</li>
+            <li>Verifica su instalación con los comandos:</li>
+          <pre class="code-block"><code>node -v</code> y <code>npm -v</code></pre>
+          
+    
+          
+          <!-- Imagen representativa -->
+          <img src="/assets/img/node-npm-check.jpg" alt="Comprobación de Node.js y npm" class="img-fluid rounded">
+        </section>
+          <!-- Paso 2: Sección Instalar Angular CLI -->
+        <section class="mb-5">
+          <h3 class="h5 text-secondary">Paso 2. Instalar Angular CLI</h3>
+          <p>La <strong>CLI (Command Line Interface)</strong> de Angular permite crear y gestionar proyectos fácilmente. Para instalarla, ejecuta el siguiente comando:</p>
+          <pre class="code-block"><code>npm install -g &#64;angular/cli</code></pre>
+          <p>Este comando instala la CLI de forma global en tu sistema. Tardará unos minutos.</p>
+            
+          
+          <h3 class="h5 text-secondary">Paso 3. Comprobar la instación ejecutando comandos CLI de Angular</h3>  
+          <p>Luego comprueba ejecutando el siguiente comando que se ha instalado correctamente: </p>
+          <pre class="code-block"><code>ng --version</code> </pre>
+          <p>Deberías ver una salida que incluye la versión de Angular CLI, Node.js y otros paquetes relacionados.</p>  
+          <!-- Imagen CLI -->
+          <img src="/assets/img/angular-version.jpg" alt="Instalación de Angular CLI" class="img-fluid rounded">
+        </section>
+      
+        <!-- Paso 3 Sección Crear Proyecto -->
+        <section class="mb-5">
+          <h3 class="h5 text-secondary">Paso 4: Crear un nuevo proyecto Angular</h3>
+          <p>Una vez instalada la CLI, crea un nuevo proyecto con:</p>
+          <pre class="code-block"><code>ng new nombre-del-proyecto</code></pre>
+          <p>Durante el proceso, se te preguntará:</p>
+          <pre class="code-block"><code>¿Desea habilitar la representación del lado del servidor (ssr) y la generación de sitios estáticos (ssg/prerendering)? Responde <strong><em>Yes</em></strong> si deseas configurar rutas desde el inicio.</code></pre>
+          <pre class="code-block"><code>¿Qué formato de hoja de estilo te gustaría usar? <strong>Elige entre CSS, SCSS, SASS o LESS.</strong></code></pre>
+          
+          <!-- Imagen Crear Proyecto -->
+          <img src="/assets/img/angular-new-project.jpg" alt="Creación de un nuevo proyecto Angular" class="img-fluid rounded">
+        </section>
+      
+        <!-- Mas datos de instalación -->
+        <section class="mb-5">
+          <h3 class="h5 text-secondary">Versiones necesarias</h3>
+          1. Angular requiere una versión específica de Node.js para funcionar correctamente. Actualmente, se recomienda:
+          <p>• Node.js >= 16.14.0. </p>
+          <p>Es buena práctica instalar una versión LTS (Long Term Support), ya que es más estable.</p>
+          2. NPM (Node Package Manager) incluido con Node.js. Asegúrate de tener una versión actualizada.
+          <p>• NPM >= 6.11.0.</p>
+          3. Angular CLI
+          <p>• Instala la última versión estable de Angular CLI.</p>
+          4. TypeScript, Angular requiere una versión específica de TypeScript. La versión mínima recomendada dependerá de la versión de Angular que estés instalando. Por ejemplo
+          <p>• Angular 16 requiere TypeScript 5.0+.</p>
+          <p>• Angular 15 requiere TypeScript 4.8+.</p>
+          5. Navegador moderno
+          <p>• Angular funciona en navegadores modernos como Chrome, Firefox o Edge.</p>
+    
+          <h3 class="h5 text-secondary">Rutas para tener en cuenta</h3>
+          <p>• Los proyectos se crean en cualquier carpeta, pero evita espacios y caracteres especiales en las rutas.</p>  
+          <h3 class="h5 text-secondary">Variables de entorno</h3>
+          <p>• No es necesario configurar variables especiales para un proyecto base.</p>  
+          <h3 class="h5 text-secondary">Se necesita de base de datos?</h3>
+          <p>• No es obligatorio para proyectos simples. Si trabajas con APIs, puedes integrar bases de datos como MySQL, MongoDB, etc.</p>
+          <p>Lo esencial es tener configurados los requisitos previos (Node.js y npm) y la instalación de Angular CLI</p>
+         
+        </section>
+      
+        <!-- Resumen de comandos -->
+        <section>
+          <h3 class="h5 text-secondary">Resumen de comandos útiles</h3>
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Comando</th>
+                <th>Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>ng version</code></td>
+                <td><code>Verifica la versión de Angular CLI instalada.</code></td>
+              </tr>
+              <tr>
+                <td><code>ng new nombre-proyecto</code></td>
+                <td><code>Crea un nuevo proyecto Angular.</code></td>
+              </tr>
+              <tr>
+                <td><code>ng serve</code></td>
+                <td><code>Inicia el servidor de desarrollo.</code></td>
+              </tr>
+              <tr>
+                <td><code>ng build</code></td>
+                <td><code>Compila el proyecto para producción.</code></td>
+              </tr>
+              <tr>
+                <td><code>ng generate component nombre</code></td>
+                <td><code>Crea un nuevo componente Angular.</code></td>
+              </tr>
+              <tr>
+                <td><code>ng generate service nombre</code></td>
+                <td><code>Crea un nuevo servicio Angular.</code></td>
+              </tr>
+              <tr>
+                <td><code>ng lint</code></td>
+                <td><code>Ejecuta el linter para verificar errores en el código.</code></td>
+              </tr>
+              <tr>
+                <td><code>ng test</code></td>
+                <td><code>Ejecuta las pruebas unitarias configuradas.</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+      
+    </div>
+      
+    

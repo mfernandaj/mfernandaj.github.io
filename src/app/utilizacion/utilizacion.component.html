@@ -1,0 +1,102 @@
+<div class="subcontenedor mb-4">
+    <h3 class="text-primary">¿Cómo empezar a crear una aplicación base?</h3>
+    <p>
+      Este tutorial que estás leyendo es, de hecho, una aplicación Angular. Para crear una aplicación base similar, sigue los siguientes pasos:
+    </p>
+    <ol class="list-group list-group-numbered">
+      <li class="list-group-item">
+        Asegúrate de tener instalada la <strong>CLI de Angular</strong>. Si aún no lo has hecho, consulta la sección de instalación de este tutorial para más detalles.
+      </li>
+      <li class="list-group-item">
+        Utiliza el comando siguiente para generar un nuevo proyecto:
+        <pre class="code-block">ng new tutorial-angular</pre>
+        <p class="text-muted">
+        Este comando creará la estructura inicial del proyecto en una carpeta llamada <code>tutorial-angular</code>.
+        </p>
+          <!-- Imagen del navegador con la app -->
+          <img src="/assets/img/carpetas-angular.jpg" alt="Aplicación Angular en localhost" class="img-fluid rounded">
+      </li>
+     
+    </ol>
+    <p style="text-align: justify; border: none;">
+      Ahora tienes una aplicación base lista para personalizar. Este tutorial se desarrolló utilizando las mismas herramientas y pasos descritos aquí, lo que demuestra lo rápido y eficiente que es Angular para crear aplicaciones estructuradas.
+    </p>
+  </div>
+  <div class="subcontenedor">
+    <h3 class="text-primary">¿Cómo visualizar los resultados de la ejecución?</h3>
+    <p>
+      Para ver tu aplicación en funcionamiento, sigue estos pasos:
+    </p>
+    <ol class="list-group list-group-numbered">
+      <li class="list-group-item">
+        Desde la carpeta del proyecto, ejecuta el siguiente comando:
+        <pre class="code-block">ng serve</pre>
+        <p class="text-muted">Esto iniciará el servidor de desarrollo local.</p>
+      </li>
+      <li class="list-group-item">
+        Abre tu navegador y accede al enlace proporcionado en la terminal, normalmente:
+        <pre class="code-block">http://localhost:4200 </pre>
+        <!-- Imagen del navegador con la app -->
+        <img src="/assets/img/angular-localhost.jpg" alt="Aplicación Angular en localhost" class="img-fluid rounded">
+      </li>
+      <li class="list-group-item">
+        Verás la página predeterminada de Angular, que ahora está lista para ser personalizada. Si deseas replicar el diseño de este tutorial, sigue las secciones avanzadas de este documento para modificar componentes y estilos.
+      </li>
+        </ol>
+    <p>
+      Recuerda que Angular CLI actualizará automáticamente la página en el navegador cada vez que realices cambios en el código.
+    </p>
+  </div>
+  
+  <!--Seccion añadir componentes-->
+  <div class="subcontenedor mb-4">
+    <h3 class="text-primary">¿Cómo crear componentes?</h3>
+    <p style="text-align: justify; border: none;">
+      En Angular, los componentes son las unidades principales de la interfaz de usuario. Para crear un componente como los utilizados en este tutorial (por ejemplo, los del menú de navegación), sigue estos pasos:
+    </p>
+  
+    <ol class="list-group list-group-numbered">
+      <li class="list-group-item">
+        Genera un nuevo componente utilizando Angular CLI con el siguiente comando:
+        <pre class="code-block">ng generate component nombre-del-componente</pre>
+        <p class="text-muted">
+          Esto creará automáticamente la carpeta del componente con sus archivos: HTML, CSS, TypeScript
+        </p>
+      </li>
+      <li class="list-group-item">
+        Ejemplo práctico: Los componentes que forman del menú de navegación en este tutorial, cada uno fue generado usando el comando: ng generate component.
+      </li>
+  
+      <li class="list-group-item">
+        Importa y usa los componentes en el archivo de rutas <pre class="code-block"><code>app.routes.ts</code> o <code>app.module.ts</code> si no es standalone:</pre>
+        <pre class="code-block">
+  <code>
+  // Ejemplo en app.module.ts
+  import &#123; FrameworkComponent &#125; from './framework/framework.component';
+  
+  &#64;NgModule(&#123;
+    declarations: [FrameworkComponent],
+    imports: [],
+    bootstrap: [AppComponent]
+  &#125;)
+  export class AppModule &#123; &#125;
+  </code>
+        </pre>
+      </li>
+      <li class="list-group-item">
+        Referencia el componente en la plantilla principal mediante su selector:
+        <pre class="code-block">&lt;app-framework&gt;&lt;/app-framework&gt;</pre>
+      </li>
+      <p>Por ejemplo:</p>
+      <!-- Imagen del navegador con la app -->
+      <img src="/assets/img/app-frame.jpg" alt="Ejemplo app-framework" class="img-fluid rounded">
+    </ol>
+    
+  
+    <p>
+      Siguiendo estos pasos, puedes crear componentes modulares reutilizables que estructuran y organizan tu aplicación Angular.
+    </p>
+    <!-- Imagen del navegador con la app -->
+    <img src="/assets/img/import-componentes.jpg" alt="Aplicación Angular en localhost" class="img-fluid rounded">
+  </div>
+  

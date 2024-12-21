@@ -15,7 +15,7 @@ export const routes: Routes = [
     { path: 'utilizacion', component: UtilizacionComponent },
     { path: 'explicacion', component: ExplicacionComponent },
     { path: 'conclusiones', component: ConclusionesComponent },
-  { path: '', redirectTo: '', pathMatch: 'full' }, // Redirigir a "Justificación" por defecto
+  { path: '', redirectTo: '', pathMatch: 'full' }, 
   { path: '**', redirectTo: '' } // Manejar rutas no encontradas
 
 ];

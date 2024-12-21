@@ -10,8 +10,11 @@
       <li class="list-group-item">
         Utiliza el comando siguiente para generar un nuevo proyecto:
         <pre class="code-block">ng new tutorial-angular</pre>
-        <p class="text-muted">
-        Este comando creará la estructura inicial del proyecto en una carpeta llamada <code>tutorial-angular</code>.
+      <!-- Imagen Crear Proyecto -->
+      <img src="/assets/img/angular-new-project.jpg" alt="Creación de un nuevo proyecto Angular" class="img-fluid rounded">
+        <p>
+        Al finalizar la creación del proyecto, te mostrará un mensaje <strong>"Packages installed successfully"</strong></p>
+        <p>Este comando creará la estructura inicial del proyecto en una carpeta llamada <code>tutorial-angular</code>.
         </p>
           <!-- Imagen del navegador con la app -->
           <img src="/assets/img/carpetas-angular.jpg" alt="Aplicación Angular en localhost" class="img-fluid rounded">
@@ -21,7 +24,17 @@
     <p style="text-align: justify; border: none;">
       Ahora tienes una aplicación base lista para personalizar. Este tutorial se desarrolló utilizando las mismas herramientas y pasos descritos aquí, lo que demuestra lo rápido y eficiente que es Angular para crear aplicaciones estructuradas.
     </p>
+    <p style="text-align: justify; border: none;">La estructura básica del proyecto incluye:
+    <li>src/: Contiene el código fuente del proyecto.</li>
+    <li>app/: Carpeta principal donde se encuentran los componentes, módulos y estilos del proyecto.</li>
+    <li>angular.json: Archivo de configuración del proyecto Angular.</li>
+    <li>package.json: Archivo donde se listan las dependencias instaladas y configuraciones del proyecto.</li>
+    </p>
+  
   </div>
+  
+  
+
   <div class="subcontenedor">
     <h3 class="text-primary">¿Cómo visualizar los resultados de la ejecución?</h3>
     <p>
@@ -40,7 +53,7 @@
         <img src="/assets/img/angular-localhost.jpg" alt="Aplicación Angular en localhost" class="img-fluid rounded">
       </li>
       <li class="list-group-item">
-        Verás la página predeterminada de Angular, que ahora está lista para ser personalizada. Si deseas replicar el diseño de este tutorial, sigue las secciones avanzadas de este documento para modificar componentes y estilos.
+        Verás la página predeterminada de Angular, que ahora está lista para ser personalizada. 
       </li>
         </ol>
     <p>
@@ -64,13 +77,23 @@
         </p>
       </li>
       <li class="list-group-item">
-        Ejemplo práctico: Los componentes que forman del menú de navegación en este tutorial, cada uno fue generado usando el comando: ng generate component.
-      </li>
+        Ejemplo práctico: Los componentes que forman del menú de navegación en este tutorial, cada uno fue generado usando el comando: ng generate component.</li>
+        <p>Esto generó los siguientes archivos dentro de la carpeta src/app/:</p>
+      <!-- Imagen del navegador con la app -->
+      <img src="/assets/img/ficheros.jpg" alt="Aplicación Angular en localhost" class="img-fluid rounded">
+      
   
       <li class="list-group-item">
-        Importa y usa los componentes en el archivo de rutas <pre class="code-block"><code>app.routes.ts</code> o <code>app.module.ts</code> si no es standalone:</pre>
-        <pre class="code-block">
-  <code>
+         Configuración de las rutas en app.routes.ts o app.module.ts.
+        <p> Una de las configuraciones más importantes es añadir las rutas correspondientes a los nuevos componentes en el archivo app.routes.ts que es donde se definen las rutas de la aplicación.</p>
+        <pre class="code-block"><code>app.routes.ts</code> o <code>app.module.ts</code> si no es standalone:</pre>
+        <p>Por ejemplo, si tienes un componente InstalacionComponent</p>
+            <!-- Imagen del navegador con la app -->
+      <img src="/assets/img/app-frame.jpg" alt="Ejemplo app-framework" class="img-fluid rounded">
+        <p>Debes añadir las rutas correspondientes en el archivo app.routes.ts de la siguiente manera:</p>   
+          <!-- Imagen del componente -->
+        <img src="/assets/img/import-componentes.jpg" alt="instalacion-componente" class="img-fluid rounded">
+       <pre class="code-block"><code>         
   // Ejemplo en app.module.ts
   import &#123; FrameworkComponent &#125; from './framework/framework.component';
   
@@ -84,19 +107,58 @@
         </pre>
       </li>
       <li class="list-group-item">
-        Referencia el componente en la plantilla principal mediante su selector:
-        <pre class="code-block">&lt;app-framework&gt;&lt;/app-framework&gt;</pre>
+        Uso de los Componentes en la Aplicación
+        <p>En la plantilla HTML de app.component.html. Usarías la lógica de navegación programática o botones que disparan las acciones definidas en app.component.ts</p>
+      </li>   
+      
+      <li class="list-group-item">
+        Configuración de los Componentes con Información Requerida 
+        <p>Después de añadir la lógica de programación en el app.component.html, puedes añadir sobre el html de cada componente la información que desees mostrar. </p>
+        <!-- Imagen del navegador con la app -->
+        <img src="/assets/img/informacion-componente.jpg" alt="informacion-componente" class="img-fluid rounded">
       </li>
-      <p>Por ejemplo:</p>
-      <!-- Imagen del navegador con la app -->
-      <img src="/assets/img/app-frame.jpg" alt="Ejemplo app-framework" class="img-fluid rounded">
+
+      <li class="list-group-item">
+        <strong>Estilos (style.css)</strong>
+        <p>En el desarrollo del tutorial, se utilizaron diversos estilos personalizados para mejorar la apariencia y la disposición del contenido. Para ello, tendrás que modificar el archivo <code>style.css</code>, que ya se encuentra en la raíz de tu proyecto Angular.</p>
+     </li>
+     
+    Siguiendo estos pasos, puedes crear componentes modulares reutilizables que estructuran y organizan tu aplicación Angular.
+      
     </ol>
+    <h3 class="text-primary">Organización de recursos multimedia</h3>
+       
+    <p style="text-align: justify; border: none;">Por defecto, Angular no crea la carpeta destinada a almacenar las imágenes y recursos estáticos dentro de la estructura del proyecto. Sin embargo, Angular utiliza esta carpeta si decides crearla manualmente. Al hacerlo, Angular sabe que los archivos dentro de la carpeta `assets` son recursos estáticos que serán copiados al directorio de salida (`dist/`) cuando se ejecute el comando de construcción de la aplicación (`ng build`).</p>
+
+    <p style="text-align: justify; border: none;">En este caso, se creó la carpeta `assets/img` dentro de la estructura del proyecto, la cual alberga todas las imágenes necesarias, como las de perfil, logotipos y otros recursos visuales que se utilizan en los componentes del tutorial. Esto asegura una mejor organización y facilita el acceso a los archivos dentro del proyecto.</p>
     
-  
-    <p>
-      Siguiendo estos pasos, puedes crear componentes modulares reutilizables que estructuran y organizan tu aplicación Angular.
-    </p>
-    <!-- Imagen del navegador con la app -->
-    <img src="/assets/img/import-componentes.jpg" alt="Aplicación Angular en localhost" class="img-fluid rounded">
+    <h3 class="text-primary">Compilación del proyecto y publicación en GitHub Pages</h3>
+       
+    <p class="justify-text">Para compilar el proyecto Angular y prepararlo para su publicación en **GitHub Pages**, puedes utilizar el siguiente comando:</p>
+    <pre class="code-block">ng build --configuration production --output-path docs --base-href / </pre>
+    <p>A continuación, se explican los parámetros del comando:</p>
+
+    <li><strong>configuration production:</strong>
+      <p style="text-align: justify; border: none;">Compila la aplicación en modo producción, optimizando los recursos para su despliegue. Esto incluye minificación de archivos, eliminación de código innecesario y optimización de rendimiento.</p>
+    </li>
+    <li><strong>--output-path docs:</strong>
+    <p style="text-align: justify; border: none;">Especifica la carpeta de salida donde se almacenarán los archivos generados tras la compilación. En este caso, se utiliza docs porque GitHub Pages permite servir contenido directamente desde esta carpeta en el repositorio.</p>
+    
+    <li><strong>--base-href /:</strong>
+      <p style="text-align: justify; border: none;">Define el prefijo de las rutas de la aplicación. Al ser publicado en GitHub Pages, este parámetro asegura que las rutas relativas funcionen correctamente.</p>
+    
+    <p class="justify-text">Como resultado, Angular genera la carpeta **docs**, que contiene los archivos estáticos necesarios para la publicación (HTML, CSS, JS). Finalmente, esta carpeta se sube al repositorio en **GitHub** para que la aplicación quede disponible en **GitHub Pages**.</p>
+    
+    <h3 class="text-primary">Configuración en GitHub Pages</h3>
+       
+    <p style="text-align: justify; border: none;">Para la publicación del tutorial en GitHub Pages, tras subir los cambios en el repositorio, sigue los siguientes pasos:</p>
+
+    <li><strong>1.	Ir a la sección Settings (Configuración) de tu repositorio en GitHub.</strong>
+    <li><strong>2.	En el apartado Pages, seleccionar Branch: main y la carpeta /docs como fuente.</strong>
+    <li><strong>3.	Guardar los cambios.</strong>
+     
+      <p style="text-align: justify; border: none;">De esta manera, tu aplicación Angular estará disponible a través de GitHub Pages.</p>
+    
   </div>
+  
   

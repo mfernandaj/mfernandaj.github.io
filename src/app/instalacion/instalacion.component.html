@@ -28,7 +28,13 @@
     
           
           <!-- Imagen representativa -->
-          <img src="/assets/img/node-npm-check.jpg" alt="Comprobación de Node.js y npm" class="img-fluid rounded">
+          <figure class="text-center">
+            <img src="/assets/img/node-npm-check.jpg" alt="Comprobación de Node.js y npm" class="img-fluid rounded">
+            
+          </figure>
+
+
+        
         </section>
           <!-- Paso 2: Sección Instalar Angular CLI -->
         <section class="mb-5">
@@ -52,11 +58,25 @@
           <p>Una vez instalada la CLI, crea un nuevo proyecto con:</p>
           <pre class="code-block"><code>ng new nombre-del-proyecto</code></pre>
           <p>Durante el proceso, se te preguntará:</p>
-          <pre class="code-block"><code>¿Desea habilitar la representación del lado del servidor (ssr) y la generación de sitios estáticos (ssg/prerendering)? Responde <strong><em>Yes</em></strong> si deseas configurar rutas desde el inicio.</code></pre>
+          <!-- Pregunta SSR/SSG -->
+        <pre class="code-block"><code>¿Desea habilitar la representación del lado del servidor (SSR) y la generación de sitios estáticos (SSG/prerendering)?</code></pre>
+        
+          <p><strong>Si respondes a Yes: </strong>La aplicación utiliza Server-Side Rendering para renderizar contenido en el servidor antes de enviarlo al navegador. Esto mejora el SEO (posicionamiento en buscadores) y acelera el tiempo de carga inicial.</p>
+          <p>Si deseas configurar rutas optimizadas y aprovechar estas características, responde <strong><em>Yes</em></strong>.</p>
+          <p><strong>¿Cuándo usarlo si respondes a YES? : </strong>Es útil si el sitio es dinámico o requiere mejor SEO, como en:
+            <li>Blogs.</li>
+            <li>Tiendas online.</li>
+            <li>Aplicaciones donde el contenido debe estar visible para buscadores.</li>
+          
+          <p><strong>Si respondes a No: </strong>La aplicación será una SPA (Single Page Application). Todo el contenido se renderiza directamente en el navegador del usuario (cliente).</p>
+          <p><strong>¿Cuándo usarlo si respondes a NO? : </strong>Es ideal para proyectos simples o aplicaciones internas, donde el SEO no es crítico:
+            <li>Páginas estáticas.</li>
+            <li>Paneles de administración.</li>
+            <li>Aplicaciones pequeñas o demostrativas.</li>
+            <p>También te preguntará:</p>
           <pre class="code-block"><code>¿Qué formato de hoja de estilo te gustaría usar? <strong>Elige entre CSS, SCSS, SASS o LESS.</strong></code></pre>
           
-          <!-- Imagen Crear Proyecto -->
-          <img src="/assets/img/angular-new-project.jpg" alt="Creación de un nuevo proyecto Angular" class="img-fluid rounded">
+
         </section>
       
         <!-- Mas datos de instalación -->

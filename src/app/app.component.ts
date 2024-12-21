@@ -24,23 +24,5 @@ import { ExplicacionComponent } from './explicacion/explicacion.component';
 })
 export class AppComponent {
   title = 'tutorial-angular';
-  /* Método para desplazarse a una sección específica
-  navigateToSection(sectionId: string): void {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
-  }*/
-/*
-    showBackToTop = false;
-
-  @HostListener('window:scroll', [])
-  onWindowScroll() {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    this.showBackToTop = scrollTop > 300; // Muestra el botón si se ha scrolleado 300px
-  }
-
-  scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }*/
+  
 }

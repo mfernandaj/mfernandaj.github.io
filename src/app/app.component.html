@@ -1,31 +1,44 @@
 <div class="container-fluid">
   <div class="row">
     <!-- Sidebar -->
-    <aside class="col-md-3 col-lg-2 bg-light p-4 vh-100">
-      <!-- Logo del menú -->
+    <aside class="col-md-3 col-lg-2 bg-light p-4 vh-100 sidebar">
+      <!-- Logo -->
       <div class="logo-container text-center mb-4">
-        <img src="assets/img/logo-angular.jpg" alt="Logo" class="logo" />
+        <img src="assets/img/angular-logo-menu.jpg" alt="Logo de Angular" class="logo" />
       </div>
       <h2 class="h4 text-center">Contenidos</h2>
-      <nav class="nav flex-column">
-        <a class="nav-link active" href="#Framework">Framework</a>
-        <a class="nav-link" href="#instalacion">Instalación</a>
-        <a class="nav-link" href="#primeros-pasos">Primeros Pasos</a>
-        <a class="nav-link" href="#utilizacion">Utilización</a>
-        <a class="nav-link" href="#explicacion">Explicación funcionamiento del framework</a>
-        <a class="nav-link" href="#conclusiones">Conclusiones</a>
+    
+      <!-- Navegación -->
+      <nav class="nav flex-column menu-links">
+        <a class="nav-link" href="#justificacion">
+          <i class="fas fa-cogs"></i> Framework
+        </a>
+        <a class="nav-link" href="#instalacion">
+          <i class="fas fa-download"></i> Instalación
+        </a>
+        <a class="nav-link" href="#primeros-pasos">
+          <i class="fas fa-play-circle"></i> Primeros Pasos
+        </a>
+        <a class="nav-link" href="#utilizacion">
+          <i class="fas fa-tools"></i> Utilización
+        </a>
+        <a class="nav-link" href="#explicacion">
+          <i class="fas fa-brain"></i> Explicación Funcionamiento
+        </a>
+        <a class="nav-link" href="#conclusiones">
+          <i class="fas fa-check-circle"></i> Conclusiones
+        </a>
       </nav>
-  <!--  <div class="logo-container text-center mb-4">
-      <img src="/assets/img/logo-nave.jpg" alt="Logo" class="logo-nave" />
-    </div>-->
-    <div class="footer-menu">
-      <a href="https://github.com/mfernandaj/mfernandaj.github.io" target="_blank" rel="noopener noreferrer">
+    
+      <!-- Footer del menú -->
+      <div class="footer-menu mt-auto text-center">
+        <a href="https://github.com/mfernandaj/mfernandaj.github.io" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-github"></i> GitHub
-      </a>
-      <a href="mailto:mariafernanda.jimenez592&#64;comunidadunir.net">
+        </a>
+        <a href="mailto:mariafernanda.jimenez592&#64;comunidadunir.net">
           <i class="fas fa-envelope"></i> Contacto
-      </a>
-  </div>
+        </a>
+      </div>
     </aside>
 
     <!-- Main Content -->
@@ -47,25 +60,27 @@
             <img src="/assets/img/perfil.jpg" alt="Foto de Fernanda" class="profile-photo">
             <h2 class="profile-name">Por Fernanda Jiménez</h2>
           </div>
+          
           <img src="/assets/img/angular-logo.jpg" alt="Logo de Angular" class="angular-logo" />
           
           <div class="image-container text-center mb-4">
-            <img src="/assets/img/logo-initial.jpg" alt="Logo inicial" class="logo-inicial" />
+            <img src="/assets/img/logo-code.jpg" alt="Logo-codigo" class="logo-inicial" />
           </div>
         </header>
 
         <!-- Introducción -->
         <div class="intro-container text-center py-5">
-          <h1 class="display-4 mb-4" style="font-weight: bold; letter-spacing: 1px;">
+          <h1 class="display-4 mb-4" style="font-weight: bold; letter-spacing: 1px;" style="text-indent: 20px;">
             Aprende Angular desde Cero
           </h1>
-          <p class="lead mb-4">
+          <p class="lead mb-4" style="text-indent: 20px;">
             Bienvenido a este <strong>tutorial interactivo</strong> de Angular para principiantes. <br />
-            <p class="lead mb-4">Descubre cómo crear aplicaciones dinámicas y estructuradas con las mejores prácticas.</p><br />       
+            <p class="lead mb-4" style="text-indent: 20px;">Descubre cómo crear aplicaciones dinámicas y estructuradas con las mejores prácticas.</p><br />       
         </div>
  
 
         <section id="justificacion" class="mb-5">
+          
           <app-justificacion></app-justificacion>
         </section>
         <section id="instalacion" class="mb-5">
@@ -117,10 +132,25 @@
       </a>
     </div>
 
-    <!-- Información de Ubicación -->
-    <div class="footer-section contact-info">
-      <p><i class="fas fa-map-marker-alt"></i> Madrid, ES</p>
+     <!-- Enlaces de Interés -->
+     <div class="footer-section footer-links">
+      <h4 class="footer-title">Enlaces de Interés</h4>
+      <a href="https://angular.io" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-angular"></i> Angular
+      </a>
+      <a href="https://nodejs.org" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-node-js"></i> Node.js
+      </a>
+      <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-code"></i> TypeScript
+      </a>
+      <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="Visual Studio Code" style="width: 20px; height: 20px; margin-right: 5px; vertical-align: middle;" />
+        Visual Code
+      </a>
     </div>
+
+
   </div>
 </footer>
 
